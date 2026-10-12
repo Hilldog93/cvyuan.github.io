@@ -89,7 +89,7 @@
 <li>支持注解的方式快速定义<code>Job</code>和<code>Trigger</code>：使用 @QuartzJob 和 @QuartzTrigger 注解，我们可以快速地定义<code>Job</code>和<code>Trigger</code>，并且它们会自动注册到<code>Quartz Scheduler</code>中。</li>
 <li>实现了一个带有管理界面的 Quartz 任务调度中心：该任务调度中心提供了完整的管理界面，包括 job 管理、Quartz 实例管理、用户管理等功能，使我们能够更方便地管理和监控任务调度。</li>
 </ul>
-<p>项目源码地址：<a href="https://github.com/TripleYuan/quartz-plus.git">https://github.com/TripleYuan/quartz-plus.git</a></p><h2>快速上手</h2>
+<p>项目源码地址：<a href="https://github.com/Hilldog93/quartz-plus.git">https://github.com/Hilldog93/quartz-plus.git</a></p><h2>快速上手</h2>
 <h3>部署Quartz任务调度系统</h3>
 <p>调度系统分为前端和后端两个项目，可以分开部署 <strong>quartz-plus-scheduler-center</strong>（调度服务） 和 <strong>quartz-plus-web-console</strong>（前端应用），也可将前端代码打包后的静态资源文件集成到 <code>quartz-plus-scheduler-center</code> 中。</p><p><strong><code>quartz-plus-scheduler-center</code> 默认使用的是H2数据库，生产环境建议使用外部数据库，如 MySQL、PostgreSQL 等。</strong></p><p>系统内置了两个登录用户：</p><blockquote>
 <p>用户1：用户名为 admin，密码为 123456，拥有管理员权限。</p><p>用户2：用户名为 quartz，密码为 123456，仅具有普通用户权限。</p></blockquote>

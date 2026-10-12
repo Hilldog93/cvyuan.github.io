@@ -7,7 +7,7 @@
 &lt;li&gt;支持注解的方式快速定义&lt;code&gt;Job&lt;/code&gt;和&lt;code&gt;Trigger&lt;/code&gt;：使用 @QuartzJob 和 @QuartzTrigger 注解，我们可以快速地定义&lt;code&gt;Job&lt;/code&gt;和&lt;code&gt;Trigger&lt;/code&gt;，并且它们会自动注册到&lt;code&gt;Quartz Scheduler&lt;/code&gt;中。&lt;/li&gt;
 &lt;li&gt;实现了一个带有管理界面的 Quartz 任务调度中心：该任务调度中心提供了完整的管理界面，包括 job 管理、Quartz 实例管理、用户管理等功能，使我们能够更方便地管理和监控任务调度。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;项目源码地址：&lt;a href="https://github.com/TripleYuan/quartz-plus.git"&gt;https://github.com/TripleYuan/quartz-plus.git&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;快速上手&lt;/h2&gt;
+&lt;p&gt;项目源码地址：&lt;a href="https://github.com/Hilldog93/quartz-plus.git"&gt;https://github.com/Hilldog93/quartz-plus.git&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;快速上手&lt;/h2&gt;
 &lt;h3&gt;部署Quartz任务调度系统&lt;/h3&gt;
 &lt;p&gt;调度系统分为前端和后端两个项目，可以分开部署 &lt;strong&gt;quartz-plus-scheduler-center&lt;/strong&gt;（调度服务） 和 &lt;strong&gt;quartz-plus-web-console&lt;/strong&gt;（前端应用），也可将前端代码打包后的静态资源文件集成到 &lt;code&gt;quartz-plus-scheduler-center&lt;/code&gt; 中。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;quartz-plus-scheduler-center&lt;/code&gt; 默认使用的是H2数据库，生产环境建议使用外部数据库，如 MySQL、PostgreSQL 等。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;系统内置了两个登录用户：&lt;/p&gt;&lt;blockquote&gt;
 &lt;p&gt;用户1：用户名为 admin，密码为 123456，拥有管理员权限。&lt;/p&gt;&lt;p&gt;用户2：用户名为 quartz，密码为 123456，仅具有普通用户权限。&lt;/p&gt;&lt;/blockquote&gt;
